@@ -292,7 +292,9 @@ class Signaling {
   Future<MediaStream> createStream(String media, bool userScreen) async {
     final Map<String, dynamic> mediaConstraints = {
       'audio': true,
-      'video': {
+      'video': false
+
+/*      {
         'mandatory': {
           'minWidth':
               '640', // Provide your own width, height and frame rate here
@@ -301,7 +303,7 @@ class Signaling {
         },
         'facingMode': 'user',
         'optional': [],
-      }
+      }*/
     };
 
     MediaStream stream = userScreen
