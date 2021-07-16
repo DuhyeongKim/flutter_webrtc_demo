@@ -3,7 +3,7 @@ import 'dart:html' as HTML;
 
 class DeviceInfo {
   static String get label {
-    return 'Flutter Web ( ' + HTML.window.navigator.userAgent + ' )';
+    return 'Flutter ( ' + HTML.window.navigator.userAgent + ' )';
   }
 
   static String get userAgent {
