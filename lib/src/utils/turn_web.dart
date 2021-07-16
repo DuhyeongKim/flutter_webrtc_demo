@@ -6,7 +6,7 @@ Future<Map> getTurnCredential(String host, int port) async {
   final res = await http.get(Uri.parse(url));
   if (res.statusCode == 200) {
     var data = json.decode(res.body);
-    print('response => $data.');
+    print('resp => $data.');
     return data;
   }
   return {};
